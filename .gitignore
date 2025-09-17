@@ -1,0 +1,22 @@
+# Directory degli ambienti virtuali
+env/
+.venv/
+
+# Directory di cache di Python
+__pycache__/
+*.pyc
+*.pyo
+
+# File di log
+*.log
+
+# File di build
+dist/
+build/
+*.egg-info/
+
+# File di configurazione specifici di IDE o editor
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
