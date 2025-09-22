@@ -1,8 +1,17 @@
-m = [[0, -5, 0.5], [5, 0, 3], [-0.5, -3, 0]]
 
-mt = [[0, 5, -0,5], [-5, 0, -3], [0.5, 3, 0]]
+class Automobile:
+    pass
 
-if m == mt:
-    print("simmetria")
-else:
-    print(("non simmetria"))
+
+class List:
+
+
+class Float:
+    pass
+
+class Tuple:
+    pass
+
+
+x = []
+x.
