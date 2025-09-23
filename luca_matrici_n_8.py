@@ -28,6 +28,7 @@ def matrice_trasposta(matrice):
            trasposta.append(riga_trasposta)
            riga_trasposta = []
    return trasposta
+
 matrice_trasposta = matrice_trasposta(matrice)
 
 i = 0
