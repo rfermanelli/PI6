@@ -4,6 +4,7 @@ h = int(input("Inserisci numero righe: "))
 k = int(input("Inserisci numero colonne: "))
 m = []
 m2 = []
+
 while i < h:
     while j < k:
         m2.append(int(input("Inserisci un numero in input: ")))
@@ -29,5 +30,6 @@ def m_ruotata(m):
             ruotata.append(riga_ruotata)
             riga_ruotata = []
     return ruotata
+
 m_ruotata = m_ruotata(m)
 print(m_ruotata)

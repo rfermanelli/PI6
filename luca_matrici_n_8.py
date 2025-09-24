@@ -3,6 +3,7 @@ j = 0
 n = int(input("Inserisci dimensione quadrata matrice: "))
 matrice = []
 m = []
+
 while i < n:
     while j < n:
         m.append(int(input("Inserisci numero: ")))
@@ -33,20 +34,27 @@ matrice_trasposta = matrice_trasposta(matrice)
 
 i = 0
 j = 0
+non_asimmetrico = 0
+
 if matrice_trasposta == matrice:
     print(0)
 else:
     while j < n:
-        while i < n:
-            while matrice[i][j] + matrice_trasposta[i][j] == 0:
-                i = i + 1
+        if non_asimmetrico == 0:
+            while i < n:
+                if matrice[i][j] + matrice_trasposta[i][j] == 0:
+                   i = i + 1
+                else:
+                    j = n - 2
+                    i = n
+                    non_asimmetrico = non_asimmetrico + 1
             else:
-                print("Error")
-                break
+                j = j + 1
         else:
-            j = j + 1
-    print(1)
-
+            print("Error")
+            break
+    else:
+        print(1)
 
 
 
