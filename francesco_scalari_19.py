@@ -21,6 +21,7 @@ while n < 0 or n == 0:
             n = int(input("prova di nuovo "))
             z = n
             break
+
 sequence = [n]
 while n != 1:
     if n % 2 == 0:  # n % 2 == 0 verifica se il numero è pari
@@ -28,6 +29,7 @@ while n != 1:
     else:
         n = 3 * n + 1
     sequence.append(n)
+
 i = len(sequence)
 i = i-1
 print("La sequenza di collatz di", z, "è --> ", *sequence, sep="\n")
